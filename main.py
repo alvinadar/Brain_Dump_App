@@ -52,7 +52,7 @@ def get_recommendation(tasks, time, energy):
    Goal: Pick the SINGLE best task.
    """
    # UPDATED: Use the 'client' variable
-   response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+   response = client.models.generate_content(model="gemma-3-1b-it", contents=prompt)
    return response.text
 
 # ... (Rest of your UI code remains the same) ...
